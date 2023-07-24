@@ -1,25 +1,59 @@
 import styles from "./Footer.module.scss";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Container } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
 export function Footer() {
+  const { t } = useTranslation("common");
   return (
     <footer className={styles.footer}>
       <Container>
         <div className={styles.box}>
-          <Link to="/">
+          <NavLink to="/">
             <h2>Logo</h2>
-          </Link>
+          </NavLink>
           <nav>
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? styles.active : undefined
+                  }
+                  to="/"
+                  state={{ name: "ilyosbek" }}
+                >
+                  {t("home")}
+                </NavLink>
               </li>
               <li>
-                <Link to="/blog">Blog</Link>
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? styles.active : undefined
+                  }
+                  to="/blog"
+                >
+                  {t("blog")}
+                </NavLink>
               </li>
               <li>
-                <Link to="/about">About</Link>
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? styles.active : undefined
+                  }
+                  to="/about"
+                >
+                  {t("about")}
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? styles.active : undefined
+                  }
+                  to="/products"
+                >
+                  products
+                </NavLink>
               </li>
             </ul>
           </nav>

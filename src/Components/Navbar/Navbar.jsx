@@ -1,5 +1,5 @@
 import { Container } from "@mui/material";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import styles from "./Nabvar.module.scss";
 
@@ -25,22 +25,51 @@ export function Navbar() {
     <header className={styles.header}>
       <Container>
         <div className={styles.box}>
-          <Link to="/">
+          <NavLink to="/">
             <h2>Logo</h2>
-          </Link>
+          </NavLink>
           <nav>
             <ul>
               <li>
-                <Link to="/">{t("home")}</Link>
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? styles.active : undefined
+                  }
+                  to="/"
+                  state={{ name: "ilyosbek" }}
+                >
+                  {t("home")}
+                </NavLink>
               </li>
               <li>
-                <Link to="/blog">{t("blog")}</Link>
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? styles.active : undefined
+                  }
+                  to="/blog"
+                >
+                  {t("blog")}
+                </NavLink>
               </li>
               <li>
-                <Link to="/about">{t("about")}</Link>
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? styles.active : undefined
+                  }
+                  to="/about"
+                >
+                  {t("about")}
+                </NavLink>
               </li>
               <li>
-                <Link to="/products">products</Link>
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? styles.active : undefined
+                  }
+                  to="/products"
+                >
+                  products
+                </NavLink>
               </li>
             </ul>
           </nav>

@@ -1,11 +1,12 @@
 import { useRoutes } from "react-router-dom";
-import About from "./Pages/About/About";
-import Blog from "./Pages/Blog/Blog";
-import Products from "./Pages/Products/Products";
-import ProductsById from "./Pages/ProductsById/ProductsById";
-import NotFound from "./Pages/NotFound/NotFound";
+import About from "pages/About/About";
+import Blog from "pages/Blog/Blog";
+import Products from "pages/Products/Products";
+import ProductsById from "pages/ProductsById/ProductsById";
+import NotFound from "pages/NotFound/NotFound";
 import ProductsLayout from "./Components/ProductsLayout/ProductsLayout";
-import Main from "./Pages/Main/Main";
+import Main from "pages/Main/Main";
+import Protected from "helpers/Protected/Protected";
 
 export const Routes = () =>
   useRoutes([
@@ -15,7 +16,11 @@ export const Routes = () =>
     },
     {
       path: "/about",
-      element: <About />,
+      element: (
+        <Protected isProtected={true}>
+          <About />
+        </Protected>
+      ),
     },
     {
       path: "/blog",

@@ -15,7 +15,9 @@ const ProductsLayout = () => {
       <Link to="/products/4">Products 4</Link>
       <br />
       <Link to="/products/5">Products 5</Link>
+
       <Outlet context={{ hello: "world" }} />
+
       <h1>{searchParams.get("number")}</h1>
       <input
         type="text"

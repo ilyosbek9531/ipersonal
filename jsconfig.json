@@ -2,12 +2,6 @@
   "compilerOptions": {
     "experimentalDecorators": true,
     "baseUrl": "src",
-    "paths": {
-      // "assets": ["./assets"],
-      // "components": ["./components"],
-      // "services": ["./services"],
-      "@utils": ["./utils"]
-    },
     "jsx": "react",
     "esModuleInterop": true,
     "strict": true,

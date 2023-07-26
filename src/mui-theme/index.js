@@ -1,7 +1,7 @@
 // https://mui.com/material-ui/customization/theming/
 
 import { createTheme } from "@mui/material";
-import { rem } from "@utils/pxToRem";
+import { rem } from "utils/pxToRem";
 
 export default createTheme({
   components: {

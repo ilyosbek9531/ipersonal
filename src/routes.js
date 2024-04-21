@@ -17,7 +17,7 @@ export const Routes = () =>
     {
       path: "/about",
       element: (
-        <Protected isProtected={true}>
+        <Protected isProtected={false}>
           <About />
         </Protected>
       ),

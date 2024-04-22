@@ -1,0 +1,15 @@
+@import "styles/mixins.scss";
+
+.projects {
+  @include direction-column;
+  gap: 30px;
+
+  h2 {
+    font-size: 40px;
+  }
+
+  &_cards {
+    @include direction-column;
+    gap: 30px;
+  }
+}

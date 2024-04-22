@@ -1,0 +1,25 @@
+@import "styles/mixins.scss";
+
+.info {
+  @include direction-column;
+  min-height: calc(100vh - 400px);
+
+  h1 {
+    font-size: 70px;
+    font-weight: 800;
+
+    span {
+      font-weight: 500;
+      color: gray;
+    }
+  }
+
+  p {
+    color: gray;
+    line-height: 2;
+  }
+
+  &_button {
+    margin-top: 20px;
+  }
+}

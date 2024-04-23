@@ -1,6 +1,10 @@
 @import "styles/mixins.scss";
 
-.main {
+.getToKnowMe {
   @include direction-column;
-  gap: 100px;
+  gap: 30px;
+
+  h2 {
+    font-size: 40px;
+  }
 }

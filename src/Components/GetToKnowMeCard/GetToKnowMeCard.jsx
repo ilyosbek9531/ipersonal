@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./GetToKnowMeCard.module.scss";
 import { useTheme } from "@mui/material";
 
-const GetToKnowMeCard = (name, description, image) => {
+const GetToKnowMeCard = ({ name, description, image }) => {
   const theme = useTheme();
   return (
     <div
@@ -14,7 +14,11 @@ const GetToKnowMeCard = (name, description, image) => {
         }`,
       }}
     >
-      GetToKnowMeCard
+      <div className={styles.card_info}>
+        <h4>{name}</h4>
+        <p>{description}</p>
+      </div>
+      <img src={image} alt="getToKnowMeCard" />
     </div>
   );
 };

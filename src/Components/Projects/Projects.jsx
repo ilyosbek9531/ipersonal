@@ -5,6 +5,8 @@ import qwattIcoImg from "../../assets/images/qwatt.webp";
 import dentalIcoImg from "../../assets/images/dentalico.png";
 import qwattImg from "../../assets/images/qwatt.png";
 import dentalImg from "../../assets/images/dentalpages.png";
+import evosIcoImg from "../../assets/images/evos.png";
+import evosImg from "../../assets/images/evosWeb.png";
 
 const projects = [
   {
@@ -22,6 +24,14 @@ const projects = [
       "Implemented TypeScript for robust compile-time error checking and employed Jest.js extensively to ensure comprehensive testing of all functions and components.",
     siteLink: "https://www.dentalpages.uz/",
     siteImage: dentalImg,
+  },
+  {
+    icoImage: evosIcoImg,
+    title: "Evos",
+    description:
+      "As a Website Developer at Evos Project, I spearheaded the implementation of geolocation functionality, ensuring that the website dynamically displayed available menu items based on customer location, contributing to improved user experience and increased online sales.",
+    siteLink: "https://evos.uz/",
+    siteImage: evosImg,
   },
 ];
 

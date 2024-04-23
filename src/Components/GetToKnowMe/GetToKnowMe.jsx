@@ -12,21 +12,25 @@ const getToKnowMe = [
     name: "About me",
     description: "Who I am and what I do",
     image: aboutMe,
+    slug: "/about",
   },
   {
     name: "Notebook",
     description: "My thoughts, insights, and reflections",
     image: nodeBook,
+    slug: "/about",
   },
   {
     name: "Bookshelf",
     description: "Books and pieces of wisdom I’ve enjoyed reading",
     image: bookShelf,
+    slug: "/about",
   },
   {
     name: "Tech Stack",
     description: "The dev tools, apps, devices, and games I use and play.",
     image: techStack,
+    slug: "/about",
   },
 ];
 
@@ -41,6 +45,7 @@ const GetToKnowMe = () => {
               name={elem.name}
               description={elem.description}
               image={elem.image}
+              slug={elem.slug}
             />
           </Grid>
         ))}

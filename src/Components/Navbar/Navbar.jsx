@@ -15,11 +15,6 @@ const navItems = [
     state: null,
   },
   {
-    path: "/blog",
-    slug: "blog",
-    state: null,
-  },
-  {
     path: "/about",
     slug: "about",
     state: null,
@@ -27,6 +22,11 @@ const navItems = [
   {
     path: "/projects",
     slug: "projects",
+    state: null,
+  },
+  {
+    path: "/blog",
+    slug: "blog",
     state: null,
   },
 ];
@@ -125,7 +125,7 @@ export function Navbar() {
                     style={{
                       cursor: "pointer",
                       color:
-                        i18n.language === lang.label &&
+                        i18n.language.includes(lang.label) &&
                         (theme.palette.mode === "dark" ? "#FF8C00" : "crimson"),
                     }}
                   >

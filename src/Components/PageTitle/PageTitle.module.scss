@@ -1,0 +1,17 @@
+@import "styles/mixins.scss";
+
+.pageTitle {
+  @include direction-column;
+  min-height: calc(100vh - 400px);
+
+  h2 {
+    font-size: 80px;
+    background: linear-gradient(to top left, #ff8c00 33%, #dc143c 66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  p {
+    color: gray;
+  }
+}

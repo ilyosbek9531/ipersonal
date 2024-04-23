@@ -1,8 +1,10 @@
 import React from "react";
 import styles from "./GetToKnowMeCard.module.scss";
 import { useTheme } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
-const GetToKnowMeCard = ({ name, description, image }) => {
+const GetToKnowMeCard = ({ name, description, image, slug }) => {
+  const navigate = useNavigate();
   const theme = useTheme();
   return (
     <div
@@ -13,6 +15,7 @@ const GetToKnowMeCard = ({ name, description, image }) => {
           theme.palette.mode === "dark" ? "#383737" : "#EBEBEB"
         }`,
       }}
+      onClick={() => navigate(slug)}
     >
       <div className={styles.card_info}>
         <h4>{name}</h4>

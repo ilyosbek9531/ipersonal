@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Project.module.scss";
+import styles from "./ProjectsContent.module.scss";
 import { ProjectCard } from "Components/ProjectCard/ProjectCard";
 import qwattIcoImg from "../../assets/images/qwatt.webp";
 import dentalIcoImg from "../../assets/images/dentalico.png";
@@ -36,10 +36,10 @@ const projects = [
   },
 ];
 
-const Projects = () => {
+const ProjectsContent = ({ isMain = false }) => {
   return (
     <div className={styles.projects}>
-      <h2>Projects</h2>
+      {isMain && <h2>Projects</h2>}
       <div className={styles.projects_cards}>
         {projects.map((project) => (
           <ProjectCard
@@ -52,11 +52,13 @@ const Projects = () => {
           />
         ))}
       </div>
-      <div className={styles.projects_button}>
-        <Button variant="outlined">More</Button>
-      </div>
+      {isMain && (
+        <div className={styles.projects_button}>
+          <Button variant="outlined">More</Button>
+        </div>
+      )}
     </div>
   );
 };
 
-export default Projects;
+export default ProjectsContent;

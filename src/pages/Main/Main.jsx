@@ -2,7 +2,7 @@ import { Container } from "@mui/material";
 import React from "react";
 import styles from "./Main.module.scss";
 import PersonalInfo from "Components/PersonalInfo/PersonalInfo";
-import Projects from "Components/Projects/Projects";
+import ProjectsContent from "Components/ProjectsContent/ProjectsContent";
 import GetToKnowMe from "Components/GetToKnowMe/GetToKnowMe";
 
 const Main = () => {
@@ -10,7 +10,7 @@ const Main = () => {
     <Container>
       <div className={styles.main}>
         <PersonalInfo />
-        <Projects />
+        <ProjectsContent isMain={true} />
         <GetToKnowMe />
       </div>
     </Container>

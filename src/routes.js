@@ -5,12 +5,22 @@ import ProductsById from "pages/ProductsById/ProductsById";
 import NotFound from "pages/NotFound/NotFound";
 import ProductsLayout from "./Components/ProductsLayout/ProductsLayout";
 import Main from "pages/Main/Main";
+import About from "pages/About/About";
+import Projects from "pages/Projects/Projects";
 
 export const Routes = () =>
   useRoutes([
     {
       path: "/",
       element: <Main />,
+    },
+    {
+      path: "/about",
+      element: <About />,
+    },
+    {
+      path: "/projects",
+      element: <Projects />,
     },
     {
       path: "/blog",

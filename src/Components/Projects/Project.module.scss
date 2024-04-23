@@ -12,4 +12,8 @@
     @include direction-column;
     gap: 25px;
   }
+
+  &_button {
+    @include element-center;
+  }
 }

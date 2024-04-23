@@ -7,6 +7,7 @@ import qwattImg from "../../assets/images/qwatt.png";
 import dentalImg from "../../assets/images/dentalpages.png";
 import evosIcoImg from "../../assets/images/evos.png";
 import evosImg from "../../assets/images/evosWeb.png";
+import { Button } from "@mui/material";
 
 const projects = [
   {
@@ -50,6 +51,9 @@ const Projects = () => {
             siteImage={project.siteImage}
           />
         ))}
+      </div>
+      <div className={styles.projects_button}>
+        <Button variant="outlined">More</Button>
       </div>
     </div>
   );

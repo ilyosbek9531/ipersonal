@@ -13,7 +13,7 @@ root.render(
   <React.StrictMode>
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
-        <BrowserRouter>
+        <BrowserRouter scrollToTop={true}>
           <Suspense fallback={<div className="suspense">Loading...</div>}>
             <App />
           </Suspense>

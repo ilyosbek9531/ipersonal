@@ -25,6 +25,11 @@ const navItems = [
     state: null,
   },
   {
+    path: "/skills",
+    slug: "Skills",
+    state: null,
+  },
+  {
     path: "/blog",
     slug: "blog",
     state: null,

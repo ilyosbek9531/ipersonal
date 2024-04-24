@@ -3,7 +3,7 @@ import styles from "./GetToKnowMe.module.scss";
 import aboutMe from "../../assets/images/aboutme.png";
 import nodeBook from "../../assets/images/notebook.png";
 import bookShelf from "../../assets/images/bookshelf.png";
-import techStack from "../../assets/images/techStack.png";
+import skills from "../../assets/images/skills.png";
 import GetToKnowMeCard from "Components/GetToKnowMeCard/GetToKnowMeCard";
 import { Grid } from "@mui/material";
 
@@ -15,6 +15,12 @@ const getToKnowMe = [
     slug: "/about",
   },
   {
+    name: "Skills",
+    description: "The dev tools, apps, devices, and games I use and play.",
+    image: skills,
+    slug: "/skills",
+  },
+  {
     name: "Notebook",
     description: "My thoughts, insights, and reflections",
     image: nodeBook,
@@ -24,12 +30,6 @@ const getToKnowMe = [
     name: "Bookshelf",
     description: "Books and pieces of wisdom I’ve enjoyed reading",
     image: bookShelf,
-    slug: "/about",
-  },
-  {
-    name: "Tech Stack",
-    description: "The dev tools, apps, devices, and games I use and play.",
-    image: techStack,
     slug: "/about",
   },
 ];

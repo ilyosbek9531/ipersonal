@@ -1,0 +1,42 @@
+@import "styles/mixins.scss";
+
+.card {
+  border-radius: 8px;
+  @include justify-content-between;
+  width: 100%;
+  padding: 30px;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  cursor: pointer;
+
+  &:hover img {
+    transform: scale(1.1);
+  }
+
+  img {
+    width: 114px;
+    height: 114px;
+    transition: all 0.5s ease-in-out;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  &_info {
+    width: 100%;
+    @include justify-content-between;
+    align-items: center;
+
+    h4 {
+      font-size: 20px;
+    }
+
+    span {
+      border: 1px solid gray;
+      padding: 2px 20px;
+      border-radius: 15px;
+      color: gray;
+      font-size: 14px;
+    }
+  }
+}

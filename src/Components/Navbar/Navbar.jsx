@@ -26,14 +26,14 @@ const navItems = [
   },
   {
     path: "/skills",
-    slug: "Skills",
+    slug: "skills",
     state: null,
   },
-  {
-    path: "/blog",
-    slug: "blog",
-    state: null,
-  },
+  // {
+  //   path: "/blog",
+  //   slug: "blog",
+  //   state: null,
+  // },
 ];
 
 export function Navbar() {

@@ -1,5 +1,5 @@
 import { Container, IconButton, useTheme } from "@mui/material";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import styles from "./Nabvar.module.scss";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
@@ -29,11 +29,6 @@ const navItems = [
     slug: "skills",
     state: null,
   },
-  // {
-  //   path: "/blog",
-  //   slug: "blog",
-  //   state: null,
-  // },
 ];
 
 export function Navbar() {
@@ -103,19 +98,28 @@ export function Navbar() {
           <div className={styles.header_navbar_utils}>
             <div className={styles.header_navbar_medias}>
               <div className={styles.header_navbar_medias_item}>
-                <LinkedinIcon
-                  fill={theme.palette.mode === "dark" ? "white" : "black"}
-                />
+                <Link
+                  to="https://www.linkedin.com/in/ilyosbek-sheraliyev/"
+                  target="_blank"
+                >
+                  <LinkedinIcon
+                    fill={theme.palette.mode === "dark" ? "white" : "black"}
+                  />
+                </Link>
               </div>
               <div className={styles.header_navbar_medias_item}>
-                <GithubIcon
-                  fill={theme.palette.mode === "dark" ? "white" : "black"}
-                />
+                <Link to="https://github.com/ilyosbek9531" target="_blank">
+                  <GithubIcon
+                    fill={theme.palette.mode === "dark" ? "white" : "black"}
+                  />
+                </Link>
               </div>
               <div className={styles.header_navbar_medias_item}>
-                <TelegramIcon
-                  fill={theme.palette.mode === "dark" ? "white" : "black"}
-                />
+                <Link to="https://t.me/Sheraliyevilyosbek" target="_blank">
+                  <TelegramIcon
+                    fill={theme.palette.mode === "dark" ? "white" : "black"}
+                  />
+                </Link>
               </div>
             </div>
             <Divider

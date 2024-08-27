@@ -15,7 +15,14 @@ const PersonalInfo = () => {
         innovate, delivering optimal solutions and fostering seamless teamwork.
       </p>
       <div className={styles.info_button}>
-        <Button variant="outlined">See my resume</Button>
+        <Button
+          variant="outlined"
+          href="https://drive.google.com/file/d/1Cahkm7mwwvms9-8ih2sJEgPf8U6hiMtj/view"
+          download="Ilyosbek_Sheraliyev_Resume.pdf"
+          target="_blank"
+        >
+          See my resume
+        </Button>
       </div>
     </div>
   );

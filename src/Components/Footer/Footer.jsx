@@ -10,8 +10,8 @@ const navItems = [
     state: null,
   },
   {
-    path: "/blog",
-    slug: "blog",
+    path: "/skills",
+    slug: "skills",
     state: null,
   },
   {
@@ -29,11 +29,11 @@ const navItems = [
 const medias = [
   {
     name: "Email",
-    link: "ilyosbeksheraliyev838@gmail.com",
+    link: "mailto:ilyosbeksheraliyev838@gmail.com",
   },
   {
     name: "LinkedIn",
-    link: "https://www.linkedin.com/in/ilyosbek-sheraliyev-451116277/",
+    link: "https://www.linkedin.com/in/ilyosbek-sheraliyev/",
   },
   {
     name: "Github",
@@ -41,7 +41,7 @@ const medias = [
   },
   {
     name: "Telegram",
-    link: "",
+    link: "https://t.me/Sheraliyevilyosbek",
   },
 ];
 
@@ -98,6 +98,7 @@ export function Footer() {
                     <li key={item.name}>
                       <NavLink
                         to={item.link}
+                        target="_blank"
                         style={{
                           color: "inherit",
                           textDecoration: "inherit",
